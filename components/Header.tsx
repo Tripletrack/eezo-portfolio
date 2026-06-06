@@ -135,7 +135,7 @@ export default function Header() {
           color: #fff !important;
         }
         @media (max-width: 640px) {
-          .header-nav { display: none !important; }
+          .header-nav { visibility: hidden !important; }
           .header-instagram { display: none !important; }
           .header-burger { display: block !important; }
           .header-name {
