@@ -65,9 +65,13 @@ export default async function FilmPage({ params }: { params: Promise<{ id: strin
         <div style={{ maxWidth: "960px", margin: "0 auto", padding: "0 16px 2px" }}>
           <div style={{ aspectRatio: "16/9", background: "#111" }}>
             <iframe
-              src={`https://www.youtube.com/embed/${project.youtube_id}?rel=0`}
+              src={
+                /^\d+$/.test(project.youtube_id)
+                  ? `https://player.vimeo.com/video/${project.youtube_id}`
+                  : `https://www.youtube.com/embed/${project.youtube_id}?rel=0`
+              }
               title={project.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
               allowFullScreen
               style={{ width: "100%", height: "100%", border: "none", display: "block" }}
             />
