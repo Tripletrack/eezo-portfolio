@@ -22,7 +22,7 @@ export default function Header() {
       }}
     >
       {/* Left nav */}
-      <nav style={{ display: "flex", gap: "32px" }}>
+      <nav className="header-nav" style={{ display: "flex", gap: "32px" }}>
         <Link
           href="/"
           className="header-nav-link"
@@ -86,13 +86,20 @@ export default function Header() {
         @media (max-width: 640px) {
           .header-name {
             font-size: 13px !important;
-            letter-spacing: 0.12em !important;
+            letter-spacing: 0.1em !important;
+          }
+          .header-nav {
+            display: none !important;
+          }
+          .header-instagram {
+            display: none !important;
           }
         }
       `}</style>
 
       {/* Right: Instagram */}
       <a
+        className="header-instagram"
         href="https://instagram.com"
         target="_blank"
         rel="noopener noreferrer"
