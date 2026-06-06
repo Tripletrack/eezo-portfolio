@@ -59,7 +59,7 @@ export default function Header() {
         {/* Right: Instagram — hidden on mobile */}
         <a
           className="header-instagram"
-          href="https://instagram.com"
+          href="https://www.instagram.com/avivnachshon/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -117,7 +117,7 @@ export default function Header() {
           </Link>
 
           {/* Instagram at bottom */}
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ position: "absolute", bottom: "40px", color: "#fff" }}>
+          <a href="https://www.instagram.com/avivnachshon/" target="_blank" rel="noopener noreferrer" style={{ position: "absolute", bottom: "40px", color: "#fff" }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
               <circle cx="12" cy="12" r="4" />
