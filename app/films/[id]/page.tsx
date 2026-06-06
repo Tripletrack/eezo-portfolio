@@ -62,7 +62,7 @@ export default async function FilmPage({ params }: { params: Promise<{ id: strin
         </div>
 
         {/* Video player */}
-        <div style={{ maxWidth: "960px", margin: "0 auto", padding: "0 16px 2px" }}>
+        <div style={{ maxWidth: "960px", margin: "0 auto", padding: "0 16px 24px" }}>
           <div style={{ aspectRatio: "16/9", background: "#111" }}>
             <iframe
               src={
