@@ -83,6 +83,12 @@ export default function Header() {
         .header-nav-link:hover {
           color: #fff !important;
         }
+        @media (max-width: 640px) {
+          .header-name {
+            font-size: 13px !important;
+            letter-spacing: 0.12em !important;
+          }
+        }
       `}</style>
 
       {/* Right: Instagram */}

@@ -67,10 +67,24 @@ function GridItem({ project }: { project: Project }) {
 
 export default function ProjectGrid({ projects }: Props) {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2px" }}>
-      {projects.map((project) => (
-        <GridItem key={project.id} project={project} />
-      ))}
-    </div>
+    <>
+      <style>{`
+        .project-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2px;
+        }
+        @media (max-width: 640px) {
+          .project-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
+      <div className="project-grid">
+        {projects.map((project) => (
+          <GridItem key={project.id} project={project} />
+        ))}
+      </div>
+    </>
   );
 }
