@@ -35,9 +35,9 @@ export default async function FilmPage({ params }: { params: Promise<{ id: strin
         <div style={{ textAlign: "center", padding: "40px 24px 24px" }}>
           <h1
             style={{
-              fontSize: "clamp(16px, 2.5vw, 24px)",
+              fontSize: "13px",
               letterSpacing: "0.12em",
-              fontWeight: 400,
+              fontWeight: 500,
               textTransform: "uppercase",
               color: "#fff",
               marginBottom: project.subtitle ? "12px" : "0",
